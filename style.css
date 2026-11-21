@@ -38,10 +38,11 @@ audio { display:block; width:100%; }
                 background:#fff; color:var(--teal); border-radius:999px;
                 font:inherit; font-size:15px; font-weight:bold; cursor:pointer; }
 .seeks button:active { background:var(--teal); color:#fff; }
-.toolbar { display:flex; justify-content:flex-end; margin:0 0 6px; }
-.toolbar button { min-height:44px; padding:0 18px; border:1px solid var(--teal);
+.toolbar { display:flex; justify-content:flex-end; gap:8px; margin:0 0 6px; }
+.toolbar button, .toolbar a { min-height:44px; padding:0 18px; border:1px solid var(--teal);
                   background:#fff; color:var(--teal); border-radius:999px;
-                  font:inherit; font-size:16px; font-weight:bold; cursor:pointer; }
+                  font:inherit; font-size:16px; font-weight:bold; cursor:pointer;
+                  display:inline-flex; align-items:center; text-decoration:none; }
 .principles { margin:30px 0 0; }
 .principles h2 { color:var(--teal); font-size:22px; margin:0 0 6px; }
 .principles .item { padding:12px 0; border-bottom:1px solid var(--rule); }
@@ -76,6 +77,22 @@ section.practice h2 { color:var(--teal); font-size:22px; margin:0 0 8px; }
 .step p { grid-column:1/-1; margin:2px 0 0; font-size:17px; color:#4a5a5e; }
 .checks { display:flex; gap:10px; }
 .checks input { width:26px; height:26px; accent-color:var(--teal); }
+ul.words { list-style:none; margin:0; padding:0; }
+ul.words li { display:flex; justify-content:space-between; gap:16px; padding:13px 4px;
+              border-bottom:1px solid var(--rule); }
+.w-en { font-family:'Segoe UI','Malgun Gothic',sans-serif; font-weight:600; }
+.w-ko { color:#4a5a5e; }
+section.grammar h2 { color:var(--teal); font-size:23px; margin:18px 0 6px; }
+section.grammar h3 { color:var(--teal); font-size:19px; margin:20px 0 6px; }
+section.grammar p { margin:6px 0; }
+table.gram { width:100%; border-collapse:collapse; margin:10px 0; font-size:18px; }
+table.gram th, table.gram td { border-bottom:1px solid var(--rule); padding:8px 6px; text-align:left; }
+table.gram th { color:var(--teal); }
+ul.examples, ul.extras { list-style:none; margin:0; padding:0; }
+ul.examples li, ul.extras li { padding:10px 0; border-bottom:1px solid var(--rule); }
+.ex-en { display:block; font-family:'Segoe UI','Malgun Gothic',sans-serif; font-size:19px; margin-top:4px; }
+.ex-ko { display:block; color:#5b6a6e; font-size:17px; }
+.mistake { background:var(--soft); border-radius:12px; padding:12px 14px; margin:16px 0 0; }
 nav.pager { display:flex; justify-content:space-between; margin:30px 0 0; font-size:18px; }
 nav.pager a { text-decoration:none; font-weight:bold; padding:10px 0; }
 footer { max-width:720px; margin:30px auto 0; color:#7b8a8e; font-size:15px; }
