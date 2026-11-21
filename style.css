@@ -19,13 +19,16 @@ h1 { margin:0; color:var(--teal); font-size:32px; line-height:1.25; }
 .lead b { color:var(--teal); }
 ul.units { list-style:none; margin:0; padding:0; }
 ul.units li { border-bottom:1px solid var(--rule); }
-ul.units a { display:flex; align-items:center; gap:14px; padding:15px 4px;
-             color:inherit; text-decoration:none; }
+ul.units a, .locked { display:flex; align-items:center; gap:14px; padding:15px 4px;
+                      color:inherit; text-decoration:none; }
 ul.units a:active { background:var(--soft); }
+.locked { color:#7b8a8e; }
+.locked .no { color:#a9b7b5; }
 .no { color:var(--teal); font-weight:bold; font-variant-numeric:tabular-nums; }
 .title { flex:1; min-width:0; }
 .dur { color:#7b8a8e; font-size:16px; font-variant-numeric:tabular-nums; }
 .chev { color:var(--teal); }
+.lock { color:#8b5033; font-size:16px; }
 h1.unit { font-size:30px; margin:26px 0 4px; }
 .meta { color:#4a5a5e; margin:0 0 16px; font-size:17px; }
 .audio { background:var(--soft); border-radius:14px; padding:14px; margin:0 0 18px; }
@@ -44,9 +47,15 @@ audio { display:block; width:100%; }
 .principles .item { padding:12px 0; border-bottom:1px solid var(--rule); }
 .principles h3 { margin:0; color:var(--teal); font-size:19px; }
 .principles p { margin:2px 0 0; font-size:17px; color:#4a5a5e; }
-.book { margin:16px 0 0; }
-.book a { display:inline-block; min-height:48px; padding:8px 20px; border:1px solid var(--teal);
-          border-radius:999px; color:var(--teal); font-weight:bold; text-decoration:none; }
+.buy { margin:34px 0 0; padding:20px; border:2px solid var(--teal); border-radius:16px; }
+.buy h2 { margin:0; color:var(--teal); font-size:23px; }
+.buy p { margin:8px 0 0; }
+.buy .price { font-size:26px; font-weight:bold; color:var(--teal); }
+.buy .price span { font-size:17px; font-weight:normal; color:#4a5a5e; }
+.buybtn { display:inline-block; min-height:52px; margin-top:14px; padding:11px 26px;
+          background:var(--teal); color:#fff; border-radius:999px;
+          font-weight:bold; text-decoration:none; }
+.buybtn.disabled { background:#a9b7b5; }
 ol.dialogue { list-style:none; margin:0; padding:0; }
 ol.dialogue li { display:grid; grid-template-columns:22px 1fr; gap:6px;
                  padding:12px 0; border-bottom:1px solid var(--rule); }
@@ -66,7 +75,6 @@ section.practice h2 { color:var(--teal); font-size:22px; margin:0 0 8px; }
 .step p { grid-column:1/-1; margin:2px 0 0; font-size:17px; color:#4a5a5e; }
 .checks { display:flex; gap:10px; }
 .checks input { width:26px; height:26px; accent-color:var(--teal); }
-nav.pager { display:flex; justify-content:space-between; margin:30px 0 0;
-            font-size:18px; }
+nav.pager { display:flex; justify-content:space-between; margin:30px 0 0; font-size:18px; }
 nav.pager a { text-decoration:none; font-weight:bold; padding:10px 0; }
 footer { max-width:720px; margin:30px auto 0; color:#7b8a8e; font-size:15px; }
