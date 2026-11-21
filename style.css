@@ -39,6 +39,14 @@ audio { display:block; width:100%; }
 .toolbar button { min-height:44px; padding:0 18px; border:1px solid var(--teal);
                   background:#fff; color:var(--teal); border-radius:999px;
                   font:inherit; font-size:16px; font-weight:bold; cursor:pointer; }
+.principles { margin:30px 0 0; }
+.principles h2 { color:var(--teal); font-size:22px; margin:0 0 6px; }
+.principles .item { padding:12px 0; border-bottom:1px solid var(--rule); }
+.principles h3 { margin:0; color:var(--teal); font-size:19px; }
+.principles p { margin:2px 0 0; font-size:17px; color:#4a5a5e; }
+.book { margin:16px 0 0; }
+.book a { display:inline-block; min-height:48px; padding:8px 20px; border:1px solid var(--teal);
+          border-radius:999px; color:var(--teal); font-weight:bold; text-decoration:none; }
 ol.dialogue { list-style:none; margin:0; padding:0; }
 ol.dialogue li { display:grid; grid-template-columns:22px 1fr; gap:6px;
                  padding:12px 0; border-bottom:1px solid var(--rule); }
