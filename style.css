@@ -52,6 +52,7 @@ audio { display:block; width:100%; }
 .buy p { margin:8px 0 0; }
 .buy .price { font-size:26px; font-weight:bold; color:var(--teal); }
 .buy .price span { font-size:17px; font-weight:normal; color:#4a5a5e; }
+.buy .note { font-size:16px; color:#4a5a5e; }
 .buybtn { display:inline-block; min-height:52px; margin-top:14px; padding:11px 26px;
           background:var(--teal); color:#fff; border-radius:999px;
           font-weight:bold; text-decoration:none; }
